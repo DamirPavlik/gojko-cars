@@ -56,6 +56,18 @@ body {
     color: #fff;
 }
 
+p {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 50px !important;
+    font-weight: 800 !important;
+}
+
 /* utility end */
 
 /* header */
@@ -108,6 +120,10 @@ main .container {
     max-width: 1030px;
 }
 
+main .module-hero {
+    padding-bottom: 200px;
+}
+
 main .module-hero h1 {
     font-size: 45px;
     font-weight: 800;
@@ -129,4 +145,26 @@ main .module-hero .btns a {
     width: 49%;
     padding: 8px 0 !important; 
 }
+
+.module-services {
+    background-color: #101214;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 130px;
+}
+
+.module-services h2 {
+    margin-bottom: 40px;
+}
+
+.module-services p:first-of-type {
+    margin-bottom: 70px;
+    color: #EAEAEA !important;
+}
+
+.module-services img {
+    margin-bottom: 30px;
+}
+
 /* main content end*/
