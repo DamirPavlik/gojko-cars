@@ -71,6 +71,12 @@ h2 {
 /* utility end */
 
 /* header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
 .black-header {
     background-color: black;
     color: white;
@@ -95,6 +101,7 @@ h2 {
 .white-header {
     padding: 16px 0;
     box-shadow: 0px 12px 5px -6px rgba(0,0,0,0.1);
+    background-color: #fff;
 }
 
 .white-header .container {
@@ -112,7 +119,7 @@ h2 {
 
 /* main content */
 main {
-    margin-top: 150px;
+    margin-top: 250px;
 
 }
 
@@ -165,6 +172,63 @@ main .module-hero .btns a {
 
 .module-services img {
     margin-bottom: 30px;
+}
+
+.module-gallery {
+    padding-top: 100px;
+    padding-bottom: 175px;
+}
+
+.module-gallery h2 {
+    margin-bottom: 70px;
+}
+
+.module-gallery .owl-theme {
+    position: relative;
+}
+
+.module-gallery .owl-theme .item {
+    margin-bottom: 2rem;
+}
+
+.module-gallery .owl-nav .owl-prev {
+    position: absolute;
+    left: -50px;
+    top: 35%;
+    transform: translateY(-50%);
+    background: #000 !important;
+    border-radius: 50% !important;
+    font-size: 23px !important;
+    padding: 0 10px !important;
+}
+
+.module-gallery .owl-nav .owl-next {
+    position: absolute;
+    right: -50px;
+    top: 35%;
+    transform: translateY(-50%);
+    background: #000 !important;
+    border-radius: 50% !important;
+    font-size: 23px !important;
+    padding: 0 10px !important;
+}
+
+.module-gallery .owl-theme .item img {
+    max-width: 100%;
+}
+
+.module-gallery .owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    background-color: #EFA7A1;
+    box-shadow: 0 20px 30px 0 rgba(12, 0, 46, 0.1);
+    transition: 0.3s all ease-in;
+}
+
+.module-gallery .owl-theme .owl-dots .active span {
+    width: 40px;
+    background-color: #CD291D !important;
+    box-shadow: 0 20px 30px 0 rgba(12, 0, 46, 0.1);
+    transition: 0.3s all ease-in;
 }
 
 /* main content end*/
