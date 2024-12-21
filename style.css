@@ -9,7 +9,7 @@ body {
     font-family: "Poppins", serif !important;
 }
 
-
+/* utility */
 .btn.btn-cta {
     background-color: #CD291D;
     color: #fff;
@@ -33,6 +33,32 @@ body {
     color: #fff;
 }
 
+.btn.btn-second-cta {
+    background-color: #fff;
+    color: #CD291D;
+    border: 2px solid #CD291D;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all linear;
+}
+
+.btn.btn-second-cta img {
+    margin-left: 16px;
+}
+
+.btn.btn-second-cta:hover {
+    background-color: #ac2218;
+    color: #fff;
+}
+
+/* utility end */
+
+/* header */
 .black-header {
     background-color: black;
     color: white;
@@ -60,7 +86,7 @@ body {
 }
 
 .white-header .container {
-    max-width: 1200px;
+    max-width: 1230px;
 }
 
 .white-header .container .nav-item {
@@ -70,4 +96,37 @@ body {
     font-size: 20px;
     font-weight: 700;
 }
+/* header end */
 
+/* main content */
+main {
+    margin-top: 150px;
+
+}
+
+main .container {
+    max-width: 1030px;
+}
+
+main .module-hero h1 {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #111;
+    line-height: 140%;
+}
+
+main .module-hero h6 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 50px;
+    font-weight: 400;
+    padding-right: 40px;
+    line-height: 150%;
+}
+
+main .module-hero .btns a {
+    width: 49%;
+    padding: 8px 0 !important; 
+}
+/* main content end*/
