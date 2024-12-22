@@ -98,6 +98,11 @@ header {
     font-weight: 800;
 }
 
+.black-header .info-header h5 a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
 .white-header {
     padding: 16px 0;
     box-shadow: 0px 12px 5px -6px rgba(0,0,0,0.1);
@@ -114,6 +119,23 @@ header {
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
+    transition: 0.3s all linear;
+    position: relative;
+}
+
+.white-header .container .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #CD291D;
+    transition: width 0.3s ease;
+}
+
+.white-header .container .nav-item:hover::after {
+    width: 100%;
 }
 /* header end */
 
@@ -229,6 +251,41 @@ main .module-hero .btns a {
     background-color: #CD291D !important;
     box-shadow: 0 20px 30px 0 rgba(12, 0, 46, 0.1);
     transition: 0.3s all ease-in;
+}
+
+.module-contact {
+    background-color: #101214;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 150px;
+}
+
+.module-contact h2 {
+    margin-bottom: 60px;
+}
+
+.module-contact .map iframe {
+    border-radius: 10px;
+}
+
+.module-contact .contact-thing {
+    margin-bottom: 40px;
+}
+
+.module-contact .contact-thing h5 {
+    margin-bottom: 3px;
+}
+
+.module-contact .contact-thing img {
+    margin-right: 16px;
+}
+
+.module-contact .contact-thing h5 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 /* main content end*/
