@@ -26,4 +26,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
+
+    const secondCta = document.querySelector(".btn-second-cta");
+    
+    secondCta.addEventListener('mouseenter', () => {
+        secondCta.querySelector("img").src = "assets/images/chat-white.png";
+    });
+    
+    secondCta.addEventListener('mouseleave', () => {
+        secondCta.querySelector("img").src = "assets/images/chat.png"
+    });
+
 });
