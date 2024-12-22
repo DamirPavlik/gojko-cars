@@ -23,12 +23,12 @@ jQuery(document).ready(function($) {
 });
 document.addEventListener("DOMContentLoaded", function () {
     const yearElement = document.querySelector(".year");
+    const secondCta = document.querySelector(".btn-second-cta");
+
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
 
-    const secondCta = document.querySelector(".btn-second-cta");
-    
     secondCta.addEventListener('mouseenter', () => {
         secondCta.querySelector("img").src = "assets/images/chat-white.png";
     });
@@ -36,5 +36,5 @@ document.addEventListener("DOMContentLoaded", function () {
     secondCta.addEventListener('mouseleave', () => {
         secondCta.querySelector("img").src = "assets/images/chat.png"
     });
-
+    
 });
