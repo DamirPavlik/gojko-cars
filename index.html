@@ -12,6 +12,11 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 <body>
+    <div class="sticky-phone">
+        <div class="phone-thing">
+            <img src="assets/images/phone.png" alt="">
+        </div>
+    </div>
     <header>
         <nav class="black-header">
             <div class="container">
@@ -91,7 +96,7 @@
             </div>
         </section>
 
-        <section class="module-gallery">
+        <section class="module-gallery" id="gallery">
             <h2 class="text-center">Pogledajte našu galeriju slika</h2>
             <div class="container">
                 <div class="owl-carousel owl-theme">
@@ -116,7 +121,7 @@
             </div>
         </section>
 
-        <section class="module-contact">
+        <section class="module-contact" id="contact">
             <div class="container">
                 <h2 class="text-center">Kontaktirajte Nas</h2>
                 <div class="row align-items-center justify-content-between">
@@ -147,17 +152,44 @@
 
         <footer>
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <img src="assets/images/logo-white.png" alt="" class="footer-logo">
-                        <h5>Sadržaj</h5>
+                        <h5 class="footer-content">Sadržaj</h5>
                         <ul>
+                            <li><a href="#services">Usluge</a></li>
+                            <li><a href="#gallery">Galerija</a></li>
+                            <li><a href="#contact">Kontaktirajte nas</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 footer-contact">
+                        <div class="d-flex align-items-center contact-thing">
+                            <img src="assets/images/phone.png" alt="">
+                            <h5><a href="tel:+381 62 735 090">+381 62 735 090</a></h5>
+                        </div>
+
+                        <div class="d-flex align-items-center contact-thing">
+                            <img src="assets/images/instagram.png" alt="">
+                            <h5><a href="" target="_blank">gojko.cars</a></h5>
+                        </div>
+
+                        <div class="d-flex align-items-center contact-thing">
+                            <img src="assets/images/maps.png" alt="">
+                            <h5>Svetog Save, <br>Pančevo 26101</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
+
+        <section class="module-copyright">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h5>© <span class="year"></span> Gojko Cars</h5>
+                    <h5>Developed by <a href="https://www.linkedin.com/in/damir-pavlik-1374341a6/" target="_blank" rel="noopener noreferrer">Damir Pavlik</a></h5>
+                </div>
+            </div>
+        </section>
     </main>
 <script src="index.js"></script>
 <script src="assets/owlcarousel/owl.carousel.min.js"></script>
