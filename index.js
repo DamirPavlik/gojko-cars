@@ -1,29 +1,8 @@
-jQuery(document).ready(function($) {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        merge: true,
-        nav: true, // Enable navigation arrows
-        navText: ["<div class='owl-prev'>&lt;</div>", "<div class='owl-next'>&gt;</div>"], // Customize arrows
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-});
 document.addEventListener("DOMContentLoaded", function () {
     const yearElement = document.querySelector(".year");
     const secondCta = document.querySelector(".btn-second-cta");
+    const hamburger = document.querySelector(".hamburger");
+    const mobileMenu = document.querySelector(".mobile-menu");
 
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
@@ -36,5 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
     secondCta.addEventListener('mouseleave', () => {
         secondCta.querySelector("img").src = "assets/images/chat.png"
     });
-    
+
+    hamburger.addEventListener("click", e => {
+        hamburger.classList.toggle("opened");
+        hamburger.setAttribute('aria-expanded', hamburger.classList.contains('opened'))
+
+        if (hamburger.classList.contains("opened")) {
+            mobileMenu.style.display = "flex";
+        } else {
+            mobileMenu.style.display = "none"
+        }
+    });
+
 });
