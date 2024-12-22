@@ -21,3 +21,9 @@ jQuery(document).ready(function($) {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const yearElement = document.querySelector(".year");
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});
