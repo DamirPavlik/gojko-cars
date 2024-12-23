@@ -26,5 +26,22 @@ document.addEventListener("DOMContentLoaded", function () {
             mobileMenu.style.display = "none"
         }
     });
+    // Check if the browser supports geolocation
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
 
+            // URL-encode the message
+            const message = encodeURIComponent(`Zdravo, nalazim se na lokaciji: https://maps.google.com/?q=${latitude},${longitude}`);
+
+            // Update the link with the location
+            const link = document.getElementById('location-link');
+            link.href = `sms:+38162735090?body=${message}`;
+        }, function (error) {
+            console.error("Geolocation error:", error.message);
+        });
+    } else {
+        console.error("Geolocation is not supported by this browser.");
+    }
 });

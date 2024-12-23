@@ -9,7 +9,6 @@ function lazyLoadImages() {
         if (isInViewport(img)) {
             img.src = img.getAttribute('data-src');
             img.removeAttribute('data-src');
-            img.classList.remove('placeholder');
         }
     });
 }
